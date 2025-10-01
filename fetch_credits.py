@@ -19,5 +19,6 @@ df = df[keys]
 df[["cr", "pdk"]] = df[["cr", "pdk"]].astype(float)
 
 df["pdk_per_cr"] = df["pdk"].div(df["cr"])
+
 df.to_csv("euroleague_credits.csv")
 
